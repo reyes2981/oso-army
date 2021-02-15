@@ -1,5 +1,8 @@
 PLAN
 
+
+-Always mount new controller to config.ru
+
 DB
 
 USER
