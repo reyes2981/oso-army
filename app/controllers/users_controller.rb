@@ -5,9 +5,16 @@ class UsersController < ApplicationController
     end
 
     post '/users' do
-        raise params.inspect
-    end
+        @user = User.new
+        @user.email = params[:email]
+        @user.password = params[:password]
 
+        if @user.save
+            redirect '/'
+        else
+            erb :'users/new/html.erb'
+        end
+    end
 end
 
 # mount this file to config.ru
