@@ -1,0 +1,25 @@
+PLAN
+
+DB
+
+USER
+    authentication
+    email/password
+    unique emails
+    many logs
+
+LOG
+1. user_id title content 
+
+COMMENT
+log_id content
+
+/logs/new
+/logs/1 # show preview of the log we plan on deploying - only the user to be able to see this so it's not shareable via our application
+/logs/1/comments # comments resource
+add comments
+edit comments
+
+/register
+/login
+/logout
