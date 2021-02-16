@@ -22,6 +22,7 @@
           <nav>
             <% if logged_in? %>
               Logged in as: <%= current_user.email %>
+              <a href="/logs/new">new log</a>
               <a href="/logout">logout</a>
               <% else %>
               <a href="/register">register</a>
