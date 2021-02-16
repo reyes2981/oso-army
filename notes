@@ -30,3 +30,4 @@ edit comments
 REMINDERS
 
 - I need to add a username to user table 
+- Include user input validations (flash)

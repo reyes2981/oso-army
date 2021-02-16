@@ -6,4 +6,5 @@ end
 
 use LogsController
 use UsersController
+use SessionsController
 run ApplicationController
