@@ -1,4 +1,4 @@
-class Logs < ApplicationController
+class LogsController < ApplicationController
 
     before '/logs/*' do
         authentication_required
@@ -13,3 +13,5 @@ class Logs < ApplicationController
     end
 
 end
+
+# mount to config.ru
