@@ -26,3 +26,7 @@ edit comments
 /register
 /login
 /logout
+
+REMINDERS
+
+-make sure bcrypt gem is working properly

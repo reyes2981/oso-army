@@ -1,15 +1,35 @@
 class ApplicationController < Sinatra::Base
 
-  enable :sessions
-
   configure do
+    enable :sessions
+    set :session_secret, "osoarmyapp-1234" # required to start a session
+
     set :public_folder, 'public'
     set :views, 'app/views'
   end
 
   get "/" do
-    binding.pry
     erb :welcome
+  end
+
+
+  # can be used in views 
+  helpers do 
+
+    def logged_in?
+      !!current_user
+    end
+
+    def current_user
+      @user ||= User.find(session[:user_id]) if session[:user_id] 
+    end
+
+    def authentication_required
+      if !logged_in?
+        flash[:notice] = "You must be Logged in."
+        redirect '/'
+      end
+    end
   end
 
 end
