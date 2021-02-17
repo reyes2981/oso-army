@@ -13,21 +13,10 @@
 
   /* --- Welcome Page Styles --- */
   body {
-    background-color: lightblue;
+    background-color: #7395ae;
     color: #333;
     font-family: Sans-Serif;
     line-height: 18px;
-  }
-
-  .wrapper {
-    background: #fff;
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
-    margin: 16px auto;
-    max-width: 960px;
-    padding: 2.25%; /* 18px / 800px */
-    width: 85%;
   }
 
   h1 {
@@ -36,11 +25,11 @@
   }
 
   h2 {
-    border-bottom: 2px solid #ccc;
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 16px;
+    text-align: center;
+    position: relative;
+    top: 100px;
   }
+
 
   h3 {
     font-size: 18px;
@@ -60,13 +49,7 @@
     width: 60%; /* 480px / 800px */
   }
 
-  .sidebar {
-    background: #eee;
-    border: 1px solid #ccc;
-    float: right;
-    padding: 2.08333333333%; /* 5px / 240px */
-    width: 30%; /* 240px / 800px */
-  }
+ 
 
   .sidebar ul {
     font-size: 14px;
@@ -77,9 +60,13 @@
   }
 
   footer.branding {
-    border-top: 2px solid #ccc;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 525px;
+  }
+
+  .enter {
+    text-align: center;
+    position: relative;
   }
 }
 
