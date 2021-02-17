@@ -5,7 +5,7 @@ class LogsController < ApplicationController
     end
 
     get '/logs' do
-        @logs = Log.find_by(:user => current_user)
+        @logs = current_user.logs
         erb :"logs/index.html"
     end
 
