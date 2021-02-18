@@ -1,5 +1,6 @@
 <h1>edit log</h1>
-<form action='/logs' method='POST'>
+<form action='/logs/<%= @log.id %>' method='post'>
+    <input type="hidden" name="_method" value="patch"> 
 
     <p>
         <label for="title">title</label>
