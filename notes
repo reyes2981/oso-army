@@ -31,3 +31,10 @@ REMINDERS
 
 - I need to add a username to user table 
 - Include user input validations (flash)
+
+02/18/21
+
+- add a military font to website 
+- add time to date fo event
+- change user greeting to "Welcome #{username}"
+
