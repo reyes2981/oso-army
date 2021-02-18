@@ -14,9 +14,9 @@ class LogsController < ApplicationController
     end
 
     get '/logs/:id' do
-        @playlists = current_user.logs.find(params[:id]) # ensures that you only have access to your log and nobody elses
+        @log = current_user.logs.find(params[:id]) # ensures that you only have access to your log and nobody elses
         
-        erb :'logs/show.html'
+        erb :"logs/show.html"
     end
 
 
