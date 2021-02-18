@@ -22,7 +22,7 @@ class LogsController < ApplicationController
 
     post '/logs' do
         @log = Log.new
-        @log.content = params[:content]
+        @log.title = params[:title]
         @log.user = current_user
 
         if @log.save

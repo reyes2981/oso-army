@@ -2,7 +2,7 @@
 
 <ul>
     <% @logs.each do |log|%>
-    <li><a href="/logs/<%= log.id %>"><%= log.content %></a></li>
+    <li><a href="/logs/<%= log.id %>"><%= log.title %></a></li>
     <% end %>
 
 </ul>
