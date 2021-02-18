@@ -23,6 +23,9 @@ class LogsController < ApplicationController
     post '/logs' do
         @log = Log.new
         @log.title = params[:title]
+        @log.description = params[:description]
+        @log.link = params[:link]
+        @log.date = params[:date]
         @log.user = current_user
 
         if @log.save
