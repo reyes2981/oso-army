@@ -1,0 +1,26 @@
+<h1>edit log</h1>
+<form action='/logs' method='POST'>
+
+    <p>
+        <label for="title">title</label>
+        <input type="text" name="title" id="title" value="<%= @log.title %>" />
+    </p>
+
+    <p>
+        <label for="description">description</label>
+        <input type="text" name="description" id="description" value="<%= @log.description %>" />
+    </p>
+
+    <p>
+        <label for="link">link</label>
+        <input type="text" name="link" id="link" value="<%= @log.link %>" />
+    </p>
+
+    <p>
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" value="<%= @log.date %>" />
+    </p>
+
+    <input type="submit" value="Edit" />
+
+</form>

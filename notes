@@ -37,4 +37,5 @@ REMINDERS
 - add a military font to website 
 - add time to date fo event
 - change user greeting to "Welcome #{username}"
+- add a show logs button so users can access all of THEIR logs 
 
