@@ -9,12 +9,16 @@ class LogsController < ApplicationController
         erb :"logs/index.html"
     end
 
-    get '/logs/:id' do
-    end
-
     get '/logs/new' do
         erb :"logs/new.html"
     end
+
+    get '/logs/:id' do
+        @playlists = current_user.logs.find(params[:id]) # ensures that you only have access to your log and nobody elses
+        
+        erb :'logs/show.html'
+    end
+
 
     post '/logs' do
         @log = Log.new
@@ -30,4 +34,8 @@ class LogsController < ApplicationController
 
 end
 
+
+# the order of routes in a controller matters! 
+    # most specific routes go first!
 # mount to config.ru
+# 
