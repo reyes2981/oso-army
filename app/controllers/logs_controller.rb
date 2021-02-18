@@ -9,6 +9,9 @@ class LogsController < ApplicationController
         erb :"logs/index.html"
     end
 
+    get '/logs/:id' do
+    end
+
     get '/logs/new' do
         erb :"logs/new.html"
     end
