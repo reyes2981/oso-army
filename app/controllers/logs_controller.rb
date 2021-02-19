@@ -35,11 +35,13 @@ class LogsController < ApplicationController
         end
     end
 
+
     # EDIT
 
     get '/logs/:id/edit' do # I need to edit a specific log 
         # I want to render a form to edit a log 
         @log = current_user.logs.find(params[:id]) # need to locate log before I can edit it.
+
         erb :"logs/edit.html"
     end
 
@@ -47,9 +49,11 @@ class LogsController < ApplicationController
 
     patch '/logs/:id' do
         @log = current_user.logs.find(params[:id]) # need to locate log
-        @log.update(params[:log]) # update method changes an exiting resource and commits it to the database
+         # update method changes an exiting resource and commits it to the database
+        @log.update(params[:log])
 
-        redirect "/logs/#{@log.id}"
+
+        redirect '/logs'
     end
 
 end

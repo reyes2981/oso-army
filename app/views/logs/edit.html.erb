@@ -1,25 +1,26 @@
 <h1>edit log</h1>
 <form action='/logs/<%= @log.id %>' method='post'>
-    <input type="hidden" name="_method" value="patch"> 
+
+    <input type="hidden" name="_method" value="patch" />  
 
     <p>
         <label for="title">title</label>
-        <input type="text" name="title" id="title" value="<%= @log.title %>" />
+        <input type="text" name="log[title]" id="title" value="<%= @log.title %>" />
     </p>
 
     <p>
         <label for="description">description</label>
-        <input type="text" name="description" id="description" value="<%= @log.description %>" />
+        <input type="text" name="log[description]" id="description" value="<%= @log.description %>" />
     </p>
 
     <p>
         <label for="link">link</label>
-        <input type="text" name="link" id="link" value="<%= @log.link %>" />
+        <input type="text" name="log[link]" id="link" value="<%= @log.link %>" />
     </p>
 
     <p>
         <label for="date">date</label>
-        <input type="date" name="date" id="date" value="<%= @log.date %>" />
+        <input type="date" name="log[date]" id="date" value="<%= @log.date %>" />
     </p>
 
     <input type="submit" value="Edit" />

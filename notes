@@ -38,4 +38,5 @@ REMINDERS
 - add time to date fo event
 - change user greeting to "Welcome #{username}"
 - add a show logs button so users can access all of THEIR logs 
+- add an EDIT button to logs/show
 
