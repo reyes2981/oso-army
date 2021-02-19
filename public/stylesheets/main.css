@@ -25,7 +25,10 @@
   }
 
   h2 {
-    
+    font-size: 36px;
+    position: absolute; 
+    left: 30px;
+    top: 10px
   }
 
 
@@ -63,6 +66,16 @@
   .enter {
     text-align: center;
     position: relative;
+  }
+
+  a.home {
+    color: blue;
+    position: relative; 
+    left: 450px;
+    top: 250px;
+    font-size: 24px;
+    padding-left: 50px;
+    text-decoration: none;
   }
 }
 

@@ -19,6 +19,10 @@
         <%= "<div class='notice'>#{flash[:notice]}</div>" if
             flash[:notice] %>
 
+          <div class="col-md-8 col-md-offset-2">
+            <h2>osoarmy</h2>
+          </div>
+
           <nav>
             <% if logged_in? %>
               Logged in as: <%= current_user.email %>
@@ -26,10 +30,11 @@
               <a href="/logs/new">new log</a>
               <a href="/logout">logout</a>
               <% else %>
-              <a href="/register">register</a>
-              <a href="/login">login</a>
+              <a class="home" href="/register">register</a>
+              <a class="home" href="/login">login</a>
               <%end%>
           </nav>
+
 
         <%= yield %>
 
