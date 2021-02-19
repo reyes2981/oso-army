@@ -69,14 +69,27 @@
   }
 
   a.home {
-    color: blue;
+    color: white;
+    background-color: #5d5c61;
     position: relative; 
     left: 450px;
     top: 250px;
     font-size: 24px;
     padding-left: 50px;
     text-decoration: none;
+    border-color: #5d5c61;
+    border-style: solid;
+    border-radius: 25px;
+    padding-right: 50px;
+ 
   }
+
+  a.home:hover {
+    background-color: #7a7980;
+    border-color: #7a7980;
+  }
+
+
 }
 
 @media screen and (max-width: 600px) {
