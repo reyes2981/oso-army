@@ -25,9 +25,7 @@
   }
 
   h2 {
-    text-align: center;
-    position: relative;
-    top: 100px;
+    
   }
 
 
@@ -48,8 +46,6 @@
     float: left;
     width: 60%; /* 480px / 800px */
   }
-
- 
 
   .sidebar ul {
     font-size: 14px;

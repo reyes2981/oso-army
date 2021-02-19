@@ -52,6 +52,12 @@ class LogsController < ApplicationController
          # update method changes an exiting resource and commits it to the database
         @log.update(params[:log])
 
+        redirect '/logs'
+    end
+
+    delete '/logs/:id' do
+        @log = current_user.logs.find(params[:id])
+        @log.destroy
 
         redirect '/logs'
     end
