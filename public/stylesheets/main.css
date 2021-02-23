@@ -160,7 +160,7 @@
 
   nav {
     color: #333;
-    font-size: 18px;
+    font-size: 23px;
     position: relative;
     top: 100px;
     margin-left: 20px;
@@ -169,15 +169,25 @@
 
   nav a {
    position: relative;
-   top: -101px;
-   margin-left: 1190px;
+   top: -90px;
+   margin-left: 1160px;
+  }
+
+  nav a.login {
+    position: absolute;
+    margin-bottom: 110px;
+    left: 100px
   }
 
   nav a#logout {
     position: relative;
     top: -170px;
     margin-left: 1240px;
-    font-size: 22px;
+    font-size: 23px;
+  }
+
+  nav a:hover {
+    color: rgb(179, 116, 116);
   }
 
   nav a#logout:hover {
