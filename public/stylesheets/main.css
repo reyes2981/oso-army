@@ -181,7 +181,7 @@
 
   nav a#logout {
     position: relative;
-    top: -170px;
+    top: -190px;
     margin-left: 1240px;
     font-size: 23px;
   }
@@ -192,6 +192,11 @@
 
   nav a#logout:hover {
     color: rgb(179, 116, 116);
+  }
+
+  nav a.logs_group {
+    right: 1100px;
+    top: 20px;
   }
 
   /* --- User Home Page Styles --- */
