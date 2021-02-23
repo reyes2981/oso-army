@@ -106,7 +106,6 @@
     border-radius: 25px;
   }
 
-
   .user_home {
     color: white;
     font-size: 24px;
@@ -132,7 +131,6 @@
   }
 
   label[for=email] {
-    
     margin-left: 65px;
   }
 
@@ -208,13 +206,34 @@
   }
 
   label[for=date] {
-    
     margin-left: -5px;
   }
 
   ul {
     position: relative;
     margin-left: 500px;
+  }
+
+  form#edit_log {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  form#delete_log {
+    position: relative;
+    margin-top: -20px;
+  }
+
+  .log_info {
+    position: relative;
+    margin-left: 550px;
+  }
+
+  img {
+    position: relative;
+    margin-left: 600px;
+    margin-top: -70px;
+    opacity: 50%;
   }
 
 }

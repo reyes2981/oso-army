@@ -1,5 +1,5 @@
 <h1>edit log</h1>
-<form action='/logs/<%= @log.id %>' method='post'>
+<form action='/logs/<%= @log.id %>' method='post' id="edit_log">
 
     <input type="hidden" name="_method" value="patch" />  
 
@@ -27,8 +27,8 @@
 
 </form>
 
-<form class="" action="/logs/<%= @log.id %>" method="post">
+<form class="" action="/logs/<%= @log.id %>" method="post" id="delete_log">
     <input type="hidden" name="_method" value="delete">
-    <input type="submit" name="" value="delete">
+    <input type="submit" name="" value="Delete">
 </form>
 
