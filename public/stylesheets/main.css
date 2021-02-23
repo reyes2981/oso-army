@@ -13,9 +13,10 @@
 
   /* --- Welcome Page Styles --- */
   body {
-    background-color: #7395ae;
+    background: rgb(138,161,177);
+    background: linear-gradient(4deg, rgba(138,161,177,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%);
     color: #333;
-    font-family: Arial 12;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 18px;
   }
 
@@ -25,10 +26,11 @@
   }
 
   h2 {
-    font-size: 36px;
+    color: #5d5c61;
+    font-size: 45px;
     position: absolute; 
     left: 30px;
-    top: 10px
+    top: 20px
   }
 
 
@@ -59,8 +61,9 @@
   }
 
   footer.branding {
-    margin-top: 20px;
-    padding-top: 525px;
+    position: absolute;
+    top: 580px;
+    left: 30px;
   }
 
   .enter {
@@ -68,27 +71,81 @@
     position: relative;
   }
 
-  a.home {
-    color: white;
-    background-color: #5d5c61;
-    position: relative; 
-    left: 450px;
-    top: 250px;
-    font-size: 24px;
-    padding-left: 50px;
+  a {
     text-decoration: none;
-    border-color: #5d5c61;
-    border-style: solid;
-    border-radius: 25px;
-    padding-right: 50px;
- 
+    color: #5d5c61;
+  }
+
+  a.home {
+    color: #333;
+    position: relative; 
+    top: 20px;
+    left: 1100px;
+    font-size: 24px;
+    text-decoration: none;
+    width: 50px;
+  }
+
+  a#home2 {
+    left: 1160px;
   }
 
   a.home:hover {
-    background-color: #7a7980;
-    border-color: #7a7980;
+    color: #dbd8e7;
+    border-radius: 25px;
   }
 
+
+  .user_home {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  a.user_home:hover {
+    color: #dbd8e7;
+  }
+
+    /* --- Register Page Styles --- */
+
+  form {
+    margin-left: 550px;
+    margin-top: 150px;
+    line-height: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+  }
+
+  form label {
+    margin-left: 50px;
+  }
+
+  label[for=email] {
+    
+    margin-left: 65px;
+  }
+
+  input[type=text] {
+    display: block;
+  }
+
+  input[type=password] {
+    display: block;
+  }
+
+  input[type=submit] {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #333;
+    border: none;
+    width: 8.8em;
+    margin-top: 20px;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(160, 158, 158);
+  }
 
 }
 
@@ -121,4 +178,9 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+
+
+
+
 }

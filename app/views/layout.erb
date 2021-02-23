@@ -20,18 +20,19 @@
             flash[:notice] %>
 
           <div class="col-md-8 col-md-offset-2">
-            <h2>osoarmy</h2>
+            <h2><a href="/">osoarmy</a></h2>
           </div>
 
           <nav>
             <% if logged_in? %>
-              Logged in as: <%= current_user.email %>
+             Welcome <%= current_user.email %>! 
+             
               <a href="/logs">my logs</a>
               <a href="/logs/new">new log</a>
               <a href="/logout">logout</a>
               <% else %>
               <a class="home" href="/register">register</a>
-              <a class="home" href="/login">login</a>
+              <a class="home" id="home2" href="/login">login</a>
               <%end%>
           </nav>
 
