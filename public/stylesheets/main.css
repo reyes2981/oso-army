@@ -12,17 +12,27 @@
   }
 
   /* --- Welcome Page Styles --- */
+  div.top_border {
+    display: block;
+    height: 1px;
+    border: 1px solid red;
+    position: relative;
+    top: 60px;
+  }
+ 
   body {
     background: rgb(138,161,177);
     background: linear-gradient(4deg, rgba(138,161,177,1) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 18px;
+    
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 25px;
     line-height: 54px;
+    margin-left: 550px;
   }
 
   h2 {
@@ -163,13 +173,19 @@
 
   nav a#logout {
     position: relative;
-    top: -160px;
+    top: -170px;
     margin-left: 1240px;
     font-size: 22px;
   }
 
   nav a#logout:hover {
     color: rgb(179, 116, 116);
+  }
+
+  /* --- User Home Page Styles --- */
+
+  ul {
+ 
   }
 
 }
