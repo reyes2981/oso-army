@@ -168,8 +168,9 @@
   }
 
   nav a {
-    display: block;
-    margin-left: 80px;
+   position: relative;
+   top: -101px;
+   margin-left: 1190px;
   }
 
   nav a#logout {
@@ -194,6 +195,11 @@
   label[for=date] {
     
     margin-left: -5px;
+  }
+
+  ul {
+    position: relative;
+    margin-left: 500px;
   }
 
 }
