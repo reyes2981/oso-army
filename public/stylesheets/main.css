@@ -15,9 +15,10 @@
   div.top_border {
     display: block;
     height: 1px;
-    border: 1px solid red;
+    border: 1px solid #b1a296;
     position: relative;
     top: 60px;
+    opacity: 60%;
   }
  
   body {
@@ -184,8 +185,15 @@
 
   /* --- User Home Page Styles --- */
 
-  ul {
- 
+  form#new_log {
+    position: relative;
+    margin-top: 5px;
+    line-height: 3;
+  }
+
+  label[for=date] {
+    
+    margin-left: -5px;
   }
 
 }
@@ -219,6 +227,7 @@
     font-size: 18px;
     line-height: 24px;
   }
+
 
 
 
